@@ -1,0 +1,81 @@
+/* Importe de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+
+/*Variaveis*/
+:root {
+    --green: #3dcd58;
+    --darkgreen: #03330c;
+    --bgheader: rgba(36, 37, 38, 1);
+    --font: 'Caudex', serif;
+    --title: 'Poppins', serif;
+    --bodyfont: 'Chivo', serif;
+}
+
+/*Reinicializar Página*/
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header Component*/
+.HeaderFrame {
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/*ScroolBar*/
+body::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid var(--bgheader);
+    background-color: var(--bgheader);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(var(--green), var(--darkgreen));
+    border-radius: 0px;
+}
+
+/*ProgressBar*/
+progress::-webkit-progress-value {
+    background-color: var(--green);
+}
+
+/*Divisória*/
+
+hr{
+    width: 5%;
+    height: 5px;
+    background-color: var(--green);
+}
+
+/*Color*/
+
+.white{
+    color: #FFF;
+}
+
+.green{
+    color: var(--green);
+}
+
+.darkgreen{
+    color: var(--darkgreen);
+}
+
+p{
+    font-family: var(--title);
+}
+
+/*Seleção*/
+::selection{
+    background-color: var(--green);
+    color: #FFF;
+}
